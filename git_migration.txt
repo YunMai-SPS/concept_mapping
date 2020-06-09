@@ -1,0 +1,8 @@
+# cp drug_normalization_nlp.py to concept_mapping and commit 
+# modify drug_normalization_nlp.py and commit  
+# add tag
+git log --pretty=oneline
+git tag -a v0.1 0ea71b2 "my version 0.1"
+
+# modify drug_normalization_nlp.py again and commit  
+# create this git_migration.txt
