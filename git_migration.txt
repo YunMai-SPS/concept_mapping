@@ -6,3 +6,21 @@ git tag -a v0.1 0ea71b2 "my version 0.1"
 
 # modify drug_normalization_nlp.py again and commit  
 # create this git_migration.txt
+
+# clone source repo from github to new repo
+git clone --mirror https://github.com/YunMai-SPS/concept_mapping.git /Users/yunmai/git/test
+
+#
+cd /Users/yunmai/git/test
+# optional: git remote remove origin
+
+# change origin attachement to the targeted remote repo (exists)
+git remote set-url origin https://github.com/yun-sema4/test_2.git
+
+git push --all
+git push --tags
+
+cd ..
+# optional: rm -rf /Users/yunmai/git/test
+
+git clone https://github.com/yun-sema4/test_2.git /Users/yunmai/git/test_2
